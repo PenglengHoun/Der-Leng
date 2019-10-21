@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	font-family: 'Freehand', cursive;
+	padding: 0;
+}
+div{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.Slide-Container{
+	left: 0;
+	height: 645px;
+	background-color: #eee;
+	position: relative;
+	overflow: hidden;
+	padding:0 !important;
+	margin: 0 !important;
+}
+.Slide-Container:hover .Btn-Menu{
+	right: 40px;
+}
+.Btn-Button{
+	top: 0;
+	margin-top: 20px;
+	background-color: black;
+	position: absolute;
+	color: white;
+	padding: 5px 10px; 
+	cursor: pointer;
+	transition: 0.8s;
+	z-index: 1000;
+}
+.Btn-Navigate{
+	background-color: black;
+	position: absolute;
+	transform: translate(0,-50%);
+	color: white;
+	padding: 5px 10px; 
+	cursor: pointer;
+	top: 50%;
+	transition: 0.8s;
+	z-index: 1000;
+}
+.Btn-Next{
+	right: -40px;
+}
+.Btn-Back{
+	left: -40px;
+}
+.Slide-Container:hover .Btn-Next{
+	right: 20px;
+}
+.Slide-Container:hover .Btn-Back{
+	left: 20px;
+}
+.Slide-Box{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+	margin-top: 0;
+	background-color: green;
+}
+.Slide-Box img{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.Slide-Box .Slide-Tittle{
+	position: absolute;
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	color:white;
+	background-color: rgba(0,0,0,0.5);
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 15px;
+}
+.slide-img{
+	position: relative;
+}
+.Menu-Bar{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	height: 45px;
+	background-color: rgba(63,63,63,1.0);
+	position: fixed;
+	overflow: hidden;
+	z-index: 1000;
+}
+.Menu-Bar .Menu ul{
+	color: navy;
+	list-style-type: none;
+	padding: 0px;
+}
+.Menu-Bar ul li{
+	font-family: 'Khmer', cursive;
+	float: left;
+}
+.Menu-Bar ul li a{
+	display: block;
+	text-decoration: none;
+	color: blue;
+	font-size: 18px;
+	padding: 10px 15px ;
+	float: right;
+}
+.Menu-Bar ul li:hover a{
+	color: white;
+	background-color: skyblue;
+	transition: 0.5s;
+	
+}
+.HomePage{
+/*	background-color: black;*/
+	padding: 33px;
+	width: 100%; 
+	height: 520px; 
+	float: left;
+	
+}
+.Destination{
+	text-align: center;
+	height: 400px;
+}
+.Des-Detail .Des{
+	height: 450px;
+}
+.Des-Detail .Des img{
+	height: 100%;
+}
+.Des{
+/*	background-color: red;*/
+	padding-right:10px;
+}
+.Des img{
+	height: 650px;
+}
+.Detail{
+/*	background-color: yellow;*/
+	left: 10px;
+}
+.Detail-More{
+/*	background-color: aqua;*/
+	width:80%; 
+	height: 200px; 
+	margin-top:80px; 
+	margin-left: 23px;
+}
+.Detail-More h2{
+	float: left;
+	font-family: 'Moulpali', cursive;
+}
+.Detail-More p{
+	font-family: 'Fasthand', serif;
+	text-indent: 50px; 
+	text-align: left; 
+	line-height: 2;
+}
+.Detail input{
+	float: right; 
+	margin-right: 85px;
+	margin-top: 10px;
+	color: gray;
+}
+.Detail input:hover{
+	color: blue;
+}
+.detail-link{
+	height: 100%;
+}
+.right-detail{
+	left: 2px;
+}
+.Content{
+	height: 100%;
+	background-color: black;
+}
+.Frist-Content{
+	height:550px;
+}
+.Content-About-Support h3, .Content-Subscribe h3{
+	color: white;
+	padding: 50px 40px ;
+}
+.Content-About-Support ul{
+	margin:0;
+	width: 100%;
+	padding: 0;
+	list-style-type: none;
+}
+.Content-About-Support ul li{
+	float: left;
+	margin: 0;
+}
+.Content-About-Support ul li a{
+	display: block;
+	text-decoration: none;
+	color: grey;
+	font-size: 18px;
+	padding: 10px 40px;
+}
+.Content-About-Support ul li:hover a{
+	color: white;	
+}
+/*Content-Info*/
+.Content-Info h3{
+	color: white;
+	padding: 50px 0px  ;
+}
+.Content-Info p .d-block{
+	font-size: 18px;
+	color: white;
+	padding: 5px 0px;
+}
+.Content-Info p .I-Block{
+	font-size: 18px;
+	color: gray;
+	padding: 5px 40px 0 0;
+}
+.Content-Subscribe{
+	color: gray;
+}
+.footer-newsletter .form-group {
+  position: relative;
+}
+
+.footer-newsletter .form-control {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  color: #fff;
+}
+.footer-newsletter button[type="submit"] {
+  background: none;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.social a {
+  font-size: 18px;
+  padding: 10px;
+  color: gray;
+}
+.Detail-More-About-Way{
+	padding: 40px 80px;
+	background-color: white;
+}
+.Detail-More-About-Way h1{
+	background-color: green;
+	float: left;
+	padding: 10px 10px 10px 10px;
+	font-size: 18px;
+	box-shadow: 1px 0px 2px 1px;
+	border-radius: 5px 5px 5px 5px;
+}
+.Detail-More-About-Way p{
+	float: left;
+	width: 100%;
+	font-size: 18px;
+}
+.Food{
+	height: auto;
+	padding: 40px;
+}
+.Food h1{
+	background-color: white;
+	float: left;
+	font-family: 'Moulpali', cursive;
+	padding: 10px 10px 10px 10px;
+	font-size: 18px;
+	box-shadow: 1px 0px 2px 1px;
+	border-radius: 5px 5px 5px 5px;
+}
+.Food h2{
+	background-color: white;
+	float: left;
+	font-family: 'Fasthand', serif;
+	padding: 10px 20px 10px 10px ;
+	font-size: 14px;
+	box-shadow: 1px 0px 2px 1px;
+	border-radius: 5px 5px 5px 5px;
+}
+.Food p{
+	float: left;
+	text-align: left;
+	font-size: 16px;
+	font-family: 'Fasthand', serif;
+	text-indent: 50px; 
+	line-height: 2;
+}
+.Food p img{
+	padding-right: 10px;
+	height: 100px;
+	transition: transform .2s
+}
+.Food iframe{
+	margin-left: 25%;
+}
+.Food img:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+.Food ul{
+	float: left;
+}
+.Food img{
+	padding: 5px 5px 5px 5px;
+	height: 100px;
+}
+.Content-About-Support h3{
+	font-family: 'Khmer', cursive;
+}
+.card-title {
+	font-family: 'Moulpali', cursive;
+	font-size: 18px;
+}
+.image-placeholder {
+	position: relative;
+	overflow: hidden;
+}
+.image-placeholder-index{
+	position: relative;
+	overflow: hidden;
+	width: 450px;
+	height: 300px;
+	margin-top: 50px;
+}
+.image-placeholder-inside {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	right: -9999px;
+	bottom: -9999px;
+	margin: auto;
+}
+.about ul{
+	padding: 5px;
+}
+.about ul li{
+	margin: 0;
+}
+.about ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	padding: 10px 40px;
+}
